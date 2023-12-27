@@ -1,0 +1,17 @@
+name: Action Initiator
+
+on:
+  push:
+
+jobs:
+  action_initiator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PING
+        run: |
+          curl -L \
+          -X POST \
+          https://api.github.com/repos/mgoblue/Two/dispatches \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.TECHSMITH_GH_TOKEN }}" \
+          --data '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
