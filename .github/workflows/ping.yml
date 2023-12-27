@@ -13,5 +13,5 @@ jobs:
           -X POST \
           https://api.github.com/repos/mgoblue/Two/dispatches \
           -H "Accept: application/vnd.github+json" \
-          -H "Authorization: Bearer ${{ secrets.TECHSMITH_GH_TOKEN }}" \
+          -H "Authorization: Bearer ${{ secrets.MGOBLUE_GITHUB_TOKEN }}" \
           --data '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
