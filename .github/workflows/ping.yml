@@ -1,8 +1,8 @@
 name: Action Initiator
 
 on:
-  push:
   #pull_request:
+  push:
     branches:
       - 'eugin/*'
     #types:
