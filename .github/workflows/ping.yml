@@ -4,13 +4,13 @@ on:
   pull_request:
     #branches:
       #- 'eugin/*'
-    #types:
-      #- opened
+    types:
+      - closed
   workflow_dispatch:
 
 jobs:
   action_initiator:
-    #if: ${{ github.event.issue.pull_request.merged }}
+    if: ${{ github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     steps:
       - name: PING
