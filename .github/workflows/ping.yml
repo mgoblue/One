@@ -1,7 +1,7 @@
 name: Action Initiator
 
 on:
-  workflow_dispatch:
+  #workflow_dispatch:
   pull_request:
     branches:
       - 'eugin/*'
@@ -11,8 +11,8 @@ on:
 
 jobs:
   action_initiator:
-    runs-on: ubuntu-latest
     if: ${{ github.event.issue.pull_request.merged }}
+    runs-on: ubuntu-latest
     steps:
       - name: PING
         run: |
