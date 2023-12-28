@@ -1,13 +1,13 @@
 name: Action Initiator
 
 on:
-  #workflow_dispatch:
-  pull_request:
+  push:
+  #pull_request:
     branches:
       - 'eugin/*'
-    types:
-      - closed
-  
+    #types:
+      #- closed
+  workflow_dispatch:
 
 jobs:
   action_initiator:
