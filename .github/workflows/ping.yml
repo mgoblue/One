@@ -18,4 +18,4 @@ jobs:
           https://api.github.com/repos/mgoblue/Two/dispatches \
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{ secrets.MGOBLUE_GITHUB_TOKEN }}" \
-          -d '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+          -d '{"event_type": "ping", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'", "branch": "${{github.head_ref}}" }}'
