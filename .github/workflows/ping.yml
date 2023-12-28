@@ -4,9 +4,9 @@ on:
   pull_request:
     branches:
       - 'eugin/**'
-    types:
-      - closed
-  #workflow_dispatch:
+    #types:
+      #- closed
+  workflow_dispatch:
 
 jobs:
   action_initiator:
