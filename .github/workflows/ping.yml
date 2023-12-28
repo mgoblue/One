@@ -4,8 +4,8 @@ on:
   pull_request:
     branches:
       - 'eugin/**'
-    #types:
-      #- closed
+    types:
+      - closed
   workflow_dispatch:
 
 jobs:
