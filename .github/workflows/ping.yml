@@ -10,7 +10,7 @@ on:
 
 jobs:
   action_initiator:
-    if: ${{ github.event.pull_request.merged }}
+    if: ${{ startsWith(github.head_ref, 'eugin/') && github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     steps:
       - name: PING
