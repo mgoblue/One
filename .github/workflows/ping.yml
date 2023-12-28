@@ -6,7 +6,7 @@ on:
       - 'eugin/**'
     types:
       - closed
-  workflow_dispatch:
+  #workflow_dispatch:
 
 jobs:
   action_initiator:
