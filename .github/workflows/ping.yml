@@ -1,4 +1,4 @@
-name: Action Initiator
+name: Open Rubric CamtasiaWin PR Dispatcher Action Initiator
 
 on:
   pull_request:
