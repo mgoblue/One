@@ -2,15 +2,13 @@ name: Action Initiator
 
 on:
   pull_request:
-    #branches:
-      #- 'eugin/*'
     types:
       - closed
   workflow_dispatch:
 
 jobs:
   action_initiator:
-    if: ${{ startsWith(github.head_ref, 'eugin/') && github.event.pull_request.merged }}
+    if: ${{ startsWith(github.head_ref, 'rubricTranslation/') && github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     steps:
       - name: PING
