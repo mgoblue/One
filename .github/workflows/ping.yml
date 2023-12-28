@@ -2,8 +2,8 @@ name: Action Initiator
 
 on:
   pull_request:
-    branches:
-      - 'eugin/*'
+    #branches:
+      #- 'eugin/*'
     #types:
       #- opened
   workflow_dispatch:
