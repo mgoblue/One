@@ -3,9 +3,9 @@ name: Action Initiator
 on:
   pull_request:
     branches:
-      - 'eugin/**'
-    #types:
-      #- closed
+      - 'eugin/*'
+    types:
+      - opened
   workflow_dispatch:
 
 jobs:
